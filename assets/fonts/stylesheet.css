@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Super Legend Boy';
+    src: url('Super-Legend-Boy.woff2') format('woff2'),
+        url('Super-Legend-Boy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
