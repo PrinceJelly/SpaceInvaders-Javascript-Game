@@ -1,5 +1,10 @@
 //state variable, state -1, do not shoot.
+const gird = document.querySelector(".grid")
 
+for (let i = 0; i < 255; i++) {
+  const sqaure = document.createElement("div")
+  gird.appendChild(sqaure)
+}
 document.addEventListener("DOMContentLoaded", () => {
   const squares = document.querySelectorAll(".grid div");
   const resultDisplay = document.querySelector("#result");
@@ -141,26 +146,26 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // function bomb() {
-    //   let Alienbomb =  currentInvaderIndex
+    function bomb() {
+      let Alienbomb =  currentInvaderIndex
 
-    //   squares[currentShooterIndex].classList.remove('laser')
-    //   currentLaserIndex -= width
+      squares[currentShooterIndex].classList.remove('laser')
+      currentLaserIndex -= width
 
-    //   sqaures[currentLaserIndex].classList.add('laser')
+      sqaures[currentLaserIndex].classList.add('laser')
 
-    //   if (sqaures[currentInvaderIndex].classList.contains('invader')) {
-    //     sqaures[currentShooterIndex].classList.remove('laser')
+      if (sqaures[currentInvaderIndex].classList.contains('invader')) {
+        sqaures[currentShooterIndex].classList.remove('laser')
 
-    //   }
-    // }
+      }
+    }
     // game over state remove option to fire.
 
-    // document.addEventListener('keyup', e => {
-    //   if (e.keyCode === 32) {
-    //     laserId = setInterval(moveLaser, 100)
-    //   }
-    // })
+    document.addEventListener('keyup', e => {
+      if (e.keyCode === 32) {
+        laserId = setInterval(moveLaser, 100)
+      }
+    })
     //state variable, state -1, do not shoot.
 
     switch (e.keyCode) {
@@ -227,12 +232,12 @@ document.addEventListener("DOMContentLoaded", () => {
           document.removeEventListener("keydown", moveShooter);
           //quote
           //play again? click event append button
-          //         if (gameState) {
-          //   gameState = false;
-          //           gameOver();
+                  if (gameState) {
+            gameState = false;
+                    gameOver();
 
-          //           console.log(gameState);
-          // }
+                    console.log(gameState);
+          }
           gameOver() = true;
         }
       }
@@ -264,11 +269,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //game state
 //if the invader has gotten to the shooter within the same sqaure, then the game is over
-// if(squares[currentShooterIndex].classList.contains('invader', 'shooter')) {
-//   resultDisplay.textContent = 'Game Over'
-//   squares[currentShooterIndex].classList.add('boom')
-//   clearInterval(invaderId)
-// }
+if(squares[currentShooterIndex].classList.contains('invader', 'shooter')) {
+  resultDisplay.textContent = 'Game Over'
+  squares[currentShooterIndex].classList.add('boom')
+  clearInterval(invaderId)
+}
 // if game state is over, grid = null
 // if game is over, grid displays "game over"
 //remove shoot
@@ -283,14 +288,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //put into a function, if game over "send api"
 //if the aliens miss the shooter but reach the end of the grid then the game is over too. we must add 1 more for and if statement declaring the game is over if the alien has shot the shooter.
-// for (let i = 0; i <= alienInvaders.length - 1; i++){
-//   if(alienInvaders[i] > (squares.length - (width -1))){
-//     resultDisplay.textContent = 'Game Over'
-//     clearInterval(invaderId)
-//   }
-// }
+for (let i = 0; i <= alienInvaders.length - 1; i++){
+  if(alienInvaders[i] > (squares.length - (width -1))){
+    resultDisplay.textContent = 'Game Over'
+    clearInterval(invaderId)
+  }
+}
 
-//grid = "null"
+grid = "null"
 
 //ADD LATER
 // if(alienInvadersTakenDown.length === alienInvaders.length) {

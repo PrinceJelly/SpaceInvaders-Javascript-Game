@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    </link>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="hero-header">Space Invaders</h1>
+        <h3 class="hero-title">If you feel like you can't do it. Relax and get some space.</h3>
+
+        <div class="quote"></div>
+        <div id="button"></div>
+    </header>
+    <main>
+        <div class="grid">
+
+            <script>
+                var addGrid = document.querySelector('.grid');
+                for (var i = 0; i <= 225; i++) {
+                    var newDiv = document.createElement('div');
+                    addGrid.appendChild(newDiv);
+                }
+
+                document.appendChild(addGrid);
+            </script>
+        </div>
+        <h3 class="game-score"> Score: <span id="result"></span></h3>
+        <div class="soundCloud">
+            <iframe width="50%" height="100px" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/282048537&color=%2340cc56&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <div
+                style="font-size: 10px; color: #0C8054 ;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                <a href="https://soundcloud.com/cat-l-645675343" title="Starfury [MOVED]" target="_blank"
+                    style="color: #0C8054; text-decoration: none;">Starfury [MOVED]</a> · <a
+                    href="https://soundcloud.com/cat-l-645675343/megalovania-8-bit" title="MEGALOVANIA 8-bit"
+                    target="_blank" style="color: #0C8054; text-decoration: none;">MEGALOVANIA 8-bit</a></div>
+        </div>
+
+    </main>
+    <script src="script/script.js" charset="utf-8"></script>
+
+
+</body>
+
+</html>
