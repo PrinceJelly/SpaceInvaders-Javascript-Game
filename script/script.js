@@ -146,20 +146,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    function bomb() {
-      let Alienbomb =  currentInvaderIndex
+    // function bomb() {
+    //   let Alienbomb =  currentInvaderIndex
 
-      squares[currentShooterIndex].classList.remove('laser')
-      currentLaserIndex -= width
+    //   squares[currentShooterIndex].classList.remove('laser')
+    //   currentLaserIndex -= width
 
-      sqaures[currentLaserIndex].classList.add('laser')
+    //   sqaures[currentLaserIndex].classList.add('laser')
 
-      if (sqaures[currentInvaderIndex].classList.contains('invader')) {
-        sqaures[currentShooterIndex].classList.remove('laser')
+    //   if (sqaures[currentInvaderIndex].classList.contains('invader')) {
+    //     sqaures[currentShooterIndex].classList.remove('laser')
 
-      }
-    }
-    // game over state remove option to fire.
+    //   }
+    // }
+    // // game over state remove option to fire.
 
     document.addEventListener('keyup', e => {
       if (e.keyCode === 32) {
@@ -232,12 +232,12 @@ document.addEventListener("DOMContentLoaded", () => {
           document.removeEventListener("keydown", moveShooter);
           //quote
           //play again? click event append button
-                  if (gameState) {
-            gameState = false;
-                    gameOver();
+          //         if (gameState) {
+          //   gameState = false;
+          //           gameOver();
 
-                    console.log(gameState);
-          }
+          //           console.log(gameState);
+          // }
           gameOver() = true;
         }
       }
