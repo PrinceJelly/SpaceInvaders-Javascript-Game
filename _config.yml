@@ -1,6 +1,6 @@
 theme: jekyll-theme-tactile
 domain: princejelly.github.io # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://princejelly.github.io/ # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /SpaceInvaders-Javascript-Game/ # place folder name if the site is served in a subfolder
+baseurl: /SpaceInvaders-Javascript-Game # place folder name if the site is served in a subfolder
 sass:
   style: compressed
