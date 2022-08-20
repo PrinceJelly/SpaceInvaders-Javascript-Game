@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Invaders</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="{{ 'styles/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{assets/styles/styles.css | prepend: site.baseurl}}">
     </link>
 </head>
 
@@ -46,7 +46,7 @@
         </div>
 
     </main>
-    <script src="script/script.js" charset="utf-8"></script>
+    <script src="{{script/script.js |  baseurl }}" charset="utf-8"></script>
 
 
 </body>
