@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Super Legend Boy";
-  src: url("/assets/fonts/Super-Legend-Boy.woff2") format("woff2"), url("/assets/fonts/Super-Legend-Boy.woff") format("woff");
+  src: url("/assets/fonts/Super-Legend-Boy.woff2") format("woff2"),
+    url("/assets/fonts/Super-Legend-Boy.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,14 +28,14 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 2;
 }
 
@@ -43,15 +44,15 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .grid {
@@ -59,7 +60,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   border: #0c8054 4px solid;
   padding: 20px 50px;
   width: 300px;
@@ -89,7 +90,7 @@ main {
   border-right: #f5d04e solid 0.1px;
   border-left: #f5d04e solid 0.1px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .grid__keep-going {
@@ -111,17 +112,17 @@ main {
 
 .hero-header {
   -webkit-animation-name: blink;
-          animation-name: blink;
+  animation-name: blink;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 @-webkit-keyframes blink {
