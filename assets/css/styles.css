@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Super Legend Boy";
-  src: url("assets/fonts/Super-Legend-Boy.woff2") format("woff2"),
-    url("assets/fonts/Super-Legend-Boy.woff") format("woff");
+  src: url("../fonts/Super-Legend-Boy.woff2") format("woff2"),
+    url("../fonts/Super-Legend-Boy.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@ body,
 html {
   font-family: "Super Legend Boy";
   background-color: #010b13;
-  background-image: url(assets/images/pixel.png);
+  background-image: url(../images/pixel.png);
   color: #0c8054;
 }
 
