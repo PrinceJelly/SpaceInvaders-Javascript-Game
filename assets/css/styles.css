@@ -1,7 +1,9 @@
 @font-face {
   font-family: "Super Legend Boy";
-  src: url("../../fonts/Super-Legend-Boy.woff2") format("woff2"),
-    url("../../fonts/Super-Legend-Boy.woff") format("woff");
+  src: url("/SpaceInvaders-Javascript-Game/assets/fonts/Super-Legend-Boy.woff2")
+      format("woff2"),
+    url("/SpaceInvaders-Javascript-Game/assets/fonts/Super-Legend-Boy.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,7 +13,7 @@ body,
 html {
   font-family: "Super Legend Boy";
   background-color: #010b13;
-  background-image: url(../../images/pixel.png);
+  background-image: url(/SpaceInvaders-Javascript-Game/assets/images/pixel.png);
   color: #0c8054;
 }
 
